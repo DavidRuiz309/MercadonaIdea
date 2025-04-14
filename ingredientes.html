@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zona de Producto</title>
+    <link rel="stylesheet" href="ingredientesStyles.css" />
+</head>
+
+<body>
+    <main class="zona-producto">
+        <section class="producto-info">
+            <img src="paella.jpg" alt="Paella Valenciana" class="producto-img" />
+            <div class="detalle">
+                <h1 class="titulo">Paella Valenciana</h1>
+                <p class="descripcion">
+                    Deliciosa paella tradicional con mariscos y sabor mediterráneo. Ideal para compartir en familia.
+                </p>
+            </div>
+        </section>
+
+        <section class="ingredientes">
+            <h2>🛒 Ingredientes a Comprar</h2>
+            <table class="tabla-ingredientes">
+                <thead>
+                    <tr>
+                        <th>Ingrediente</th>
+                        <th>Cantidad</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Arroz bomba</td>
+                        <td>1500g</td>
+                        <td><button class="btn-add" onclick="añadirAlCarrito('Arroz bomba')">Añadir 🛒</button></td>
+                    </tr>
+                    <tr>
+                        <td>Pollo de corral</td>
+                        <td>1</td>
+                        <td><button class="btn-add" onclick="añadirAlCarrito('Pollo de corral')">Añadir 🛒</button></td>
+                    </tr>
+                    <tr>
+                        <td>Conejo</td>
+                        <td>0.5</td>
+                        <td><button class="btn-add" onclick="añadirAlCarrito('Conejo')">Añadir 🛒</button></td>
+                    </tr>
+                    <tr>
+                        <td>Judía verde plana</td>
+                        <td>500g</td>
+                        <td><button class="btn-add" onclick="añadirAlCarrito('Judía verde plana')">Añadir 🛒</button></td>
+                    </tr>
+                    <tr>
+                        <td>Garrofón</td>
+                        <td>500g</td>
+                        <td><button class="btn-add" onclick="añadirAlCarrito('Garrofón')">Añadir 🛒</button></td>
+                    </tr>
+                    <tr>
+                        <td>Alcachofa</td>
+                        <td>6g</td>
+                        <td><button class="btn-add" onclick="añadirAlCarrito('Alcachofa')">Añadir 🛒</button></td>
+                    </tr>
+                    <tr>
+                        <td>Caracoles</td>
+                        <td>500g</td>
+                        <td><button class="btn-add" onclick="añadirAlCarrito('Caracoles')">Añadir 🛒</button></td>
+                    </tr>
+                    <tr>
+                        <td>Aceite oliva virgen extra</td>
+                        <td>1 unidad</td>
+                        <td><button class="btn-add" onclick="añadirAlCarrito('Aceite oliva virgen extra')">Añadir 🛒</button></td>
+                    </tr>
+                    <tr>
+                        <td>Pimentón dulce</td>
+                        <td>1 bote</td>
+                        <td><button class="btn-add" onclick="añadirAlCarrito('Pimentón dulce')">Añadir 🛒</button></td>
+                    </tr>
+                    <tr>
+                        <td>Tomate</td>
+                        <td>4 unidades</td>
+                        <td><button class="btn-add" onclick="añadirAlCarrito('Tomate')">Añadir 🛒</button></td>
+                    </tr>
+                    <tr>
+                        <td>Azafrán</td>
+                        <td></td>
+                        <td><button class="btn-add" onclick="añadirAlCarrito('Azafrán')">Añadir 🛒</button></td>
+                    </tr>
+                    <tr>
+                        <td>Romero fresco</td>
+                        <td></td>
+                        <td><button class="btn-add" onclick="añadirAlCarrito('Romero fresco')">Añadir 🛒</button></td>
+                    </tr>
+                    <tr>
+                        <td>Sal</td>
+                        <td></td>
+                        <td><button class="btn-add" onclick="añadirAlCarrito('Sal')">Añadir 🛒</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script>
+        function añadirAlCarrito(nombreIngrediente) {
+            alert(`"${nombreIngrediente}" añadido al carrito 🛒`);
+            console.log(`Añadido al carrito: ${nombreIngrediente}`);
+        }
+    </script>
+</body>
+
+</html>

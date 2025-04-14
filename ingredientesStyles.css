@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    color: #333;
+}
+
+.zona-producto {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.producto-info {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.producto-img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.detalle {
+    flex: 1;
+}
+
+.titulo {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.descripcion {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.ingredientes h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.tabla-ingredientes {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.tabla-ingredientes thead {
+    background-color: #f1f1f1;
+}
+
+.tabla-ingredientes th,
+.tabla-ingredientes td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.btn-add {
+    background-color: #ff9800;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add:hover {
+    background-color: #e68900;
+}
